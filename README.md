@@ -32,7 +32,8 @@ This is my first PHP Project and I have plenty of new feature ideas to implement
 7. Additional changes
 - Some settings should be updated in code as for example your website URL address in activate.php and register.php files.
 - SQL Database connection settings should be placed respectively in $DATABASE_HOST/USER/PASS/NAME directives for desired PHP files.
-- Web application uses "user_uploads" folder which for security purposes is stored two directories above the main project folder and need to be created manually (easier installation will be implemented later..) Also files user_uploads.php and delete_files.php need to be stored there.
+- Web application uses "user_uploads" folder which for security purposes is stored two directories above the main project folder and need to be created manually (easier installation will be implemented later..) 
+- Also files user_uploads.php and delete_files.php need to be stored in "user_uploads" folder
 
 
 ## Usage
