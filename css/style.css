@@ -1,0 +1,353 @@
+* 
+{
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body 
+{
+    background-color: rgba(10, 10, 33, 0.9); /*#435165 - login and register menu original background, rgba(117, 31, 82, 0.8) - nice one*/
+    padding: 0;
+    margin: 0;
+}
+
+.navtop 
+{
+    /*margin-top: 30px; - avoid content overlay
+    position: fixed;
+    top: 0;*/
+    background-color: rgba(0, 0, 0, 0.5); /*#2f3947 #464d4c #34495E - nice one*/
+    height: 50px;
+    width: 100%;
+    border-left: 3px solid rgb(255,255,0);    
+}
+
+    .navtop div 
+    {
+        display: flex;
+        margin: 0 auto;
+        width: auto; /*1000px*/
+        height: 100%;
+        /*padding-right: 14.4px;*/ 
+    }
+
+        .navtop div h1, .navtop div a 
+        {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .navtop div h1 
+        {
+            flex: 1;
+            font-size: 24px;
+            padding-left: 15px; /*see whats best*/
+            margin: 0;
+            color: #ffffff; /* #eaebed */
+            font-weight: normal;
+        }
+
+        .navtop div a 
+        {
+            padding: 0 20px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+            .navtop div a i 
+            {
+                padding: 2px 8px 0 0;
+            }
+
+            .navtop div a:hover 
+            {
+                color: #ffff00;
+            }
+
+body.loggedin 
+{
+    background-color: #f3f4f7;
+}
+
+.content 
+{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+    .content h2 
+    {
+        margin: 0;
+        padding: 25px 0;
+        font-size: 22px;
+        border-bottom: 1px solid #e0e0e3;
+        color: #4a536e;
+    }
+
+    .content > p, .content > div 
+    {
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+        margin: 25px 0;
+        padding: 25px;
+        background-color: #fff;
+    }
+
+        .content > p table td, .content > div table td /*breaks between username, password, email*/
+        {
+            padding: 5px;
+        }
+
+            .content > p table td:first-child, .content > div table td:first-child 
+            {
+                font-weight: bold;
+                color: #4a536e;
+                padding-right: 15px;
+            }
+
+        .content > div p 
+        {
+            padding: 5px; 
+            margin: 0 0 10px 0;
+        }
+
+.login { 
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 100px auto;
+    border-radius: 7px;
+    /*border: 2px solid rgb(255, 255, 178);*/
+}
+    
+    
+    .login a
+    {
+        text-decoration: none;
+        font-size: 14px;       
+    }
+
+    .login h1 
+    {
+        text-align: center;
+        color: rgba(0, 0, 0, 1); /*#5b6574;*/
+        font-size: 24px;
+        padding: 20px 0 20px 0;
+        border-bottom: 1px solid #e8eaed;
+    }
+
+    .login form 
+    { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 10px; /*20px*/
+        
+    }
+
+
+        /*.login form h2 
+        {
+           color: rgba(0, 0, 0, 1); 
+        }*/
+
+        .login form label { /*defines username and password labels*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.1);               /*rgba(255, 168, 195, 0.3); rgba(0, 0, 0, 0.2); #34495E #464D4C #3274d6*/
+            color: #ffffff;
+        }
+
+        .login form input[type="password"], .login form input[type="text"] {
+            width: 310px;
+            height: 50px;
+            border: 1px solid #e8eaed; /*#34495E;*/
+            margin-bottom: 15px; /*20px*/            
+            padding: 0 10px;
+        }
+
+        .login form input[type="submit"] { 
+            width: 100%; /*100%*/
+            padding: 15px; /*15px*/
+            margin-top: 20px; /*20px*/
+            background-color: rgba(255, 255, 0, 0.2);
+            border: 0;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #000; /*#34495E*/            
+            transition: background-color 1s; /*6s*/
+        }
+
+            .login form input[type="submit"]:hover 
+            {
+                background-color: rgba(255, 230, 0, 0.8); /*rgba(255, 168, 195, 0.6) background-color: rgba(255, 168, 95, 0.6); background-color: rgba(255, 170, 0, 0.6); #FFE574 #1B1F1E */
+                transition: background-color 1s;
+            }
+
+
+.echo
+{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+
+.echo2 
+{
+    padding-right: 3px; /*make text in center to the upload panel section*/
+    text-align: center;
+    color: #5b6574;
+    font-weight: 600;
+}
+
+footer 
+{
+    text-align: center;
+    font-size: 5px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.5); /*34495E #464D4C*/
+    color: rgba(255, 255, 255, 1);
+    position: fixed;
+    padding: 0px;
+    bottom: 0;
+    width: 100%;
+    /*height: 63px;*/
+}
+
+footer p
+{
+    font-size: 14px;
+    /*padding-right: 14.4px;*/ 
+}
+
+.upload { /*Login panel*/
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 100px auto;
+    border-radius: 10px;
+}
+
+    .upload h1 { /*h1 - Upload Your Files */
+        text-align: center;
+        color: #5b6574;
+        font-size: 20px;
+        padding: 10px 0 10px 0;
+        border-bottom: 1px solid #dee0e4;
+    }
+
+    .upload form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        border-radius: 3px;
+        /*padding-top: 20px;*/
+
+    }
+
+        .upload form input[type="file"] 
+        {
+            
+            width: 100%;
+            
+            /*opacity: 0.5;*/
+            text-indent: -8.7em; /*-8.7em*/
+            padding: 35px;
+            margin-left: 142px; /*142px*/
+            /*margin-top: 20px;*/
+            background-color: #FFF;
+            
+            cursor: pointer;
+            font-weight: bold;
+            color: #000;
+            
+        }
+
+        .upload form input[type="submit"] 
+        {
+            width: 75%;
+            padding: 15px;
+            margin-top: 14px;
+            background-color: rgba(255, 255, 0, 0.3); /*#3274d6*/
+            border: 0px solid rgba(255, 255, 0, 1);
+            border-radius: 40px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #5b6574;
+            transition: background-color 0.0s;
+        }
+
+
+        .upload form input[type="submit"]:hover 
+        {
+            background-color: rgba(255, 255, 0, 0.8); /*#FFB266 #2868c7*/
+            transition: background-color 0.0s;
+        }
+
+.register {
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 100px auto;
+    border-radius: 7px;
+}
+
+    .register h1 {
+        text-align: center;
+        color: #34495E;
+        font-size: 24px;
+        padding: 20px 0 20px 0;
+        border-bottom: 1px solid #e8eaed;
+    }
+
+    .register form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+        .register form label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: #34495E;
+            color: #ffffff;
+        }
+
+        .register form input[type="password"], .register form input[type="text"], .register form input[type="email"] {
+            width: 310px;
+            height: 50px;
+            border: 1px solid #e8eaed;
+            margin-bottom: 20px;
+            padding: 0 15px;
+        }
+
+        .register form input[type="submit"] 
+        {
+            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+            background-color: #34495E;
+            border: 0;
+            cursor: pointer;
+            font-weight: bold;
+            color: #ffffff;
+            transition: background-color 1s;
+        }
+
+            .register form input[type="submit"]:hover 
+            {
+                background-color: #FFE574;
+                transition: background-color 1s;
+            }
