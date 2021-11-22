@@ -38,7 +38,7 @@ This is my first PHP Project and I have plenty of new feature ideas to implement
 
 ## Usage
 
-Simply create new user through register.php and check your mail account for activation link  and then feel free to log-in.
+Simply create a new user through register.php and check your mail account for activation link  and then feel free to log-in.
 
 ## License
 Attribution-NonCommercial-ShareAlike:
