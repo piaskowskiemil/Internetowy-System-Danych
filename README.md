@@ -1,1 +1,0 @@
-# Internetowy-System-Danych
