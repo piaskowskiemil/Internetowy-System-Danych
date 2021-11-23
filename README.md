@@ -6,7 +6,7 @@ This is my first PHP Project and I have plenty of new feature ideas to implement
 ## Installation (Windows)
 
 1. Download source code from this repo and place it in public_html folder or something else (make sure your PHP server is up and running)
-2. Create isd_users table within empty MySQL database (or other SQL related db)
+2. Create table named isd_users within empty MySQL database (or other SQL related db)
 3. Build following columns: 
 
 - id (primary key with auto increment) - type: int(11)
